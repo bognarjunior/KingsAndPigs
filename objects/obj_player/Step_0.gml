@@ -29,5 +29,15 @@ if(_floor){
 	}
 } else {
 	// Gravity
-	speed_player_v += gravity_player
+	speed_player_v += gravity_player;
+	if(speed_player_v < 0){
+		sprite_index = spr_player_jump;
+	} else {
+		sprite_index = spr_player_fall;
+	}
+	
+	if(speed_player_h != 0){
+		// Change front side
+		image_xscale = sign(speed_player_h);
+	}
 }
