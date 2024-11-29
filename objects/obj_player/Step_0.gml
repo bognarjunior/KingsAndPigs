@@ -12,12 +12,12 @@ _jump = keyboard_check_pressed(inputs.jump);
 // Player Movement
 speed_player_h = (_right - _left) * speed_player;
 
-// Gravity
-speed_player_v += gravity_player
-
 // Jump
 if(_floor){
 	if(_jump){
 		speed_player_v = - jump_player;
 	}
+} else {
+	// Gravity
+	speed_player_v += gravity_player
 }
