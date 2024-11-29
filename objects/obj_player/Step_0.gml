@@ -17,6 +17,16 @@ if(_floor){
 	if(_jump){
 		speed_player_v = - jump_player;
 	}
+	
+	// Change sprites 
+	if(speed_player_h != 0){
+		sprite_index = spr_player_run;
+		
+		// Change front side
+		image_xscale = sign(speed_player_h);
+	} else {
+		sprite_index = spr_player_idle;
+	}
 } else {
 	// Gravity
 	speed_player_v += gravity_player
