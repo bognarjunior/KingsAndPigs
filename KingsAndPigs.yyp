@@ -38,6 +38,8 @@
   },
   "name":"KingsAndPigs",
   "resources":[
+    {"id":{"name":"obj_enemie_pig","path":"objects/obj_enemie_pig/obj_enemie_pig.yy",},},
+    {"id":{"name":"obj_entity","path":"objects/obj_entity/obj_entity.yy",},},
     {"id":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
