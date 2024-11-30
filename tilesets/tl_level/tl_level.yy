@@ -1,7 +1,16 @@
 {
   "$GMTileSet":"v1",
   "%Name":"tl_level",
-  "autoTileSets":[],
+  "autoTileSets":[
+    {"$GMAutoTileSet":"","%Name":"Floor","closed_edge":false,"name":"Floor","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
+        40,46,45,30,26,55,49,51,27,29,54,52,48,33,32,35,39,105,86,108,21,83,84,89,41,20,106,90,59,103,102,109,
+        43,97,20,92,22,93,60,112,58,111,24,96,62,98,100,
+      ],},
+    {"$GMAutoTileSet":"","%Name":"Background","closed_edge":false,"name":"Background","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
+        154,160,159,144,140,169,163,165,141,143,168,166,162,166,165,149,153,219,200,222,135,197,198,203,155,
+        201,220,204,173,217,216,223,157,211,134,206,136,207,174,226,172,225,138,210,176,212,214,
+      ],},
+  ],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
