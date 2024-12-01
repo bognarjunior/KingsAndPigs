@@ -3,5 +3,6 @@
 
 // Inherit the parent event
 event_inherited();
-is_walking = false;
+is_walking = true;
 speed_enemie = choose(1, -1);
+time_walking = game_get_speed(gamespeed_fps) * 2;
