@@ -3,39 +3,39 @@
 
 // Horizontal collision
 // Collision
-var _collision_h = instance_place(x + speed_player_h, y, obj_floor);
+var _collision_h = instance_place(x + speed_h, y, obj_floor);
 
 if(_collision_h){
 	
-	if(speed_player_h > 0){
+	if(speed_h > 0){
 		x = _collision_h.bbox_left + (x - bbox_right);
 	}
 	
-	if(speed_player_h < 0){
+	if(speed_h < 0){
 		x = _collision_h.bbox_right + (x - bbox_left);
 	}
 	
-	speed_player_h = 0;
+	speed_h = 0;
 	
 }
 
-var _collision_y = instance_place(x, y + speed_player_v, obj_floor);
+var _collision_y = instance_place(x, y + speed_v, obj_floor);
 
 if(_collision_y){
 	
-	if(speed_player_v > 0){
+	if(speed_v > 0){
 		y = _collision_y.bbox_top + (y - bbox_bottom);
 	}
 	
-	if(speed_player_v < 0){
+	if(speed_v < 0){
 		y = _collision_y.bbox_bottom + (y - bbox_top);
 	}
 	
-	speed_player_v = 0;
+	speed_v = 0;
 	
 }
 
 // Moviments
-x += speed_player_h
+x += speed_h
 
-y += speed_player_v
+y += speed_v

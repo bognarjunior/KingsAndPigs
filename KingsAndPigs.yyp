@@ -43,6 +43,7 @@
     {"id":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"main","path":"scripts/main/main.yy",},},
     {"id":{"name":"spr_enemie_pig_idle","path":"sprites/spr_enemie_pig_idle/spr_enemie_pig_idle.yy",},},
     {"id":{"name":"spr_enemie_pig_run","path":"sprites/spr_enemie_pig_run/spr_enemie_pig_run.yy",},},
     {"id":{"name":"spr_floor","path":"sprites/spr_floor/spr_floor.yy",},},

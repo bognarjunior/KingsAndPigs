@@ -10,34 +10,34 @@ _right = keyboard_check(inputs.right);
 _jump = keyboard_check_pressed(inputs.jump);
 
 // Player Movement
-speed_player_h = (_right - _left) * speed_player;
+speed_h = (_right - _left) * speed_moviment;
 
 // Jump
 if(_floor){
 	if(_jump){
-		speed_player_v = - jump_player;
+		speed_v = - jump_player;
 	}
 	
 	// Change sprites 
-	if(speed_player_h != 0){
+	if(speed_h != 0){
 		sprite_index = spr_player_run;
 		
 		// Change front side
-		image_xscale = sign(speed_player_h);
+		image_xscale = sign(speed_h);
 	} else {
 		sprite_index = spr_player_idle;
 	}
 } else {
 	// Gravity
-	speed_player_v += gravity_player;
-	if(speed_player_v < 0){
+	speed_v += gravity_game;
+	if(speed_v < 0){
 		sprite_index = spr_player_jump;
 	} else {
 		sprite_index = spr_player_fall;
 	}
 	
-	if(speed_player_h != 0){
+	if(speed_h != 0){
 		// Change front side
-		image_xscale = sign(speed_player_h);
+		image_xscale = sign(speed_h);
 	}
 }

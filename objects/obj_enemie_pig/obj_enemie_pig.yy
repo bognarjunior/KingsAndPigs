@@ -3,6 +3,7 @@
   "%Name":"obj_enemie_pig",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_enemie_pig",
@@ -36,6 +37,9 @@
     "name":"spr_enemie_pig_idle",
     "path":"sprites/spr_enemie_pig_idle/spr_enemie_pig_idle.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_enemie_pig_idle",
+    "path":"sprites/spr_enemie_pig_idle/spr_enemie_pig_idle.yy",
+  },
   "visible":true,
 }
