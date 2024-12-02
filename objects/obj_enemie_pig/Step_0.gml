@@ -31,6 +31,12 @@ if(_floor){
 		speed_h *= -1;
 	}
 	
+	if(!can_fall){
+		if(!place_meeting(x + (speed_h * 10), y + 1, obj_floor)){
+			speed_h *= -1;
+		}
+	}
+	
 } else {
 	speed_v += gravity_game;
 	speed_h = 0;
