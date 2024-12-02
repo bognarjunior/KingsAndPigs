@@ -1,6 +1,21 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if(is_dead){
+	
+	sprite_index = spr_enemie_pig_dead;
+	
+	if(image_speed <= 0){
+		image_alpha -= 0.01
+	}
+	
+	if(image_alpha <=0){
+		instance_destroy()
+	}
+	
+	exit;
+}
+
 var _floor = place_meeting(x, y + 1 , obj_floor);
 
 if(_floor){
@@ -46,7 +61,7 @@ if(_floor){
 	}
 }
 
-if(is_damage){
-	sprite_index = spr_enemie_pig_hit
+if(is_damage && !is_dead){
+	sprite_index = spr_enemie_pig_hit;
 	speed_h = 0;
 }

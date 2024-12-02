@@ -62,7 +62,7 @@
     },
     "name":"spr_enemie_pig_dead",
     "playback":1,
-    "playbackSpeed":8.0,
+    "playbackSpeed":4.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",

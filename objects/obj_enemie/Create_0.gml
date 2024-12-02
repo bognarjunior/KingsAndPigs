@@ -5,4 +5,5 @@
 event_inherited();
 
 is_damage = false;
+is_dead = false;
 

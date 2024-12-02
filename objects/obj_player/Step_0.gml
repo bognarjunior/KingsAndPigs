@@ -37,8 +37,10 @@ if(_floor){
 		var _enemie = instance_place(x, y + 1, obj_enemie);
 		
 		if(_enemie){
-			speed_v = - jump_player;
-			_enemie.is_damage = true;
+			if(!_enemie.is_dead){
+				speed_v = - jump_player;
+				_enemie.is_damage = true;
+			}
 		}
 		
 	}
