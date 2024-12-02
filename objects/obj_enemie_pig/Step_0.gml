@@ -20,7 +20,7 @@ if(_floor){
 	}
 	
 	
-	if(speed_h != 0){
+	if(speed_h != 0 && !is_damage){
 		sprite_index = spr_enemie_pig_run;
 		image_xscale = sign(speed_h);
 	} else {
@@ -44,4 +44,9 @@ if(_floor){
 	if(speed_h != 0){
 		image_xscale = sign(speed_h);
 	}
+}
+
+if(is_damage){
+	sprite_index = spr_enemie_pig_hit
+	speed_h = 0;
 }

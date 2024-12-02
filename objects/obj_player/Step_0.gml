@@ -34,6 +34,13 @@ if(_floor){
 		sprite_index = spr_player_jump;
 	} else {
 		sprite_index = spr_player_fall;
+		var _enemie = instance_place(x, y + 1, obj_enemie);
+		
+		if(_enemie){
+			speed_v = - jump_player;
+			_enemie.is_damage = true;
+		}
+		
 	}
 	
 	if(speed_h != 0){
