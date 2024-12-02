@@ -4,18 +4,19 @@
 var _floor = place_meeting(x, y + 1 , obj_floor);
 
 if(_floor){
+	
 	time_walking -= 1;
 	if(time_walking <= 0){
 		is_walking = choose(true, false);
-		speed_enemie = choose(1,-1);
-		time_walking = game_get_speed(gamespeed_fps) * 3;
-	}
-	
-	
-	if(is_walking){
-		speed_h = speed_enemie;
-	} else {
-		speed_h = 0
+		
+		if(is_walking){
+			speed_h = choose(speed_enemie, -speed_enemie);
+		} else {
+			speed_h = 0
+		}
+		
+		//speed_enemie = choose(1,-1);
+		time_walking = game_get_speed(gamespeed_fps) * 2;
 	}
 	
 	
@@ -26,6 +27,9 @@ if(_floor){
 		sprite_index = spr_enemie_pig_idle;
 	}
 	
+	if(place_meeting(x + speed_h, y, obj_floor)){
+		speed_h *= -1;
+	}
 	
 } else {
 	speed_v += gravity_game;
