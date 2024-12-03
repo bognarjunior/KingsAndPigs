@@ -30,7 +30,6 @@ if(_floor){
 			speed_h = 0
 		}
 		
-		//speed_enemie = choose(1,-1);
 		time_walking = game_get_speed(gamespeed_fps) * 2;
 	}
 	

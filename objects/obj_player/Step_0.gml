@@ -10,8 +10,9 @@ _right = keyboard_check(inputs.right);
 _jump = keyboard_check_pressed(inputs.jump);
 
 // Player Movement
-speed_h = (_right - _left) * speed_moviment;
-
+if(timer_damage <= 0){
+	speed_h = (_right - _left) * speed_moviment;
+}
 // Jump
 if(_floor){
 	if(_jump){
@@ -37,6 +38,7 @@ if(_floor){
 		var _enemie = instance_place(x, y + 1, obj_enemie);
 		
 		if(_enemie){
+			is_damage = false;
 			if(!_enemie.is_dead){
 				speed_v = - jump_player;
 				_enemie.is_damage = true;
@@ -48,5 +50,22 @@ if(_floor){
 	if(speed_h != 0){
 		// Change front side
 		image_xscale = sign(speed_h);
+	}
+}
+
+if(is_damage) {
+	sprite_index = spr_player_hit
+}
+
+if(timer_damage > 0){
+	timer_damage--;
+}
+
+var _enemie_hit = instance_place(x, y, obj_enemie);
+
+if(_enemie_hit){
+	timer_damage = time_hit;
+	if(!_enemie_hit.is_dead && !_enemie_hit.is_damage){
+		is_damage = true;
 	}
 }
