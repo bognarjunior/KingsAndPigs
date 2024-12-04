@@ -3,8 +3,11 @@
 
 // Inherit the parent event
 event_inherited();
+
+state = "normal";
 is_walking = choose(true, false);
 speed_enemie = choose(1, -1);
+
 if(is_walking){
 	speed_h = choose(speed_enemie, -speed_enemie);
 } else {

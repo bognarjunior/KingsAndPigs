@@ -4,7 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-_stage = "on"
+_stage = "off"
 
 time_boom = game_get_speed(gamespeed_fps) * 3;
 timer_boom = time_boom;
