@@ -11,10 +11,13 @@ is_damage = false;
 
 time_hit = game_get_speed(gamespeed_fps) * 1;
 timer_damage = 0;
-timer_invencible = game_get_speed(gamespeed_fps) * 3;
+
+time_without_damage = game_get_speed(gamespeed_fps) * 3;
+timer_invencible = 0;
 
 inputs = {
 	left : ord("A"),
 	right: ord("D"),
-	jump : ord("W")
+	jump : ord("W"),
+	space : vk_space
 }

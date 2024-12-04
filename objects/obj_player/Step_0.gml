@@ -3,11 +3,12 @@
 
 // Create controllers 
 var _floor = place_meeting(x, y + 1, obj_floor);
-var _left, _right, _jump;
+var _left, _right, _jump, _attack;
 
 _left = keyboard_check(inputs.left);
 _right = keyboard_check(inputs.right);
 _jump = keyboard_check_pressed(inputs.jump);
+_attack = keyboard_check_pressed(inputs.space);
 
 // Player Movement
 if(timer_damage <= 0){
@@ -19,15 +20,20 @@ if(_floor){
 		speed_v = - jump_player;
 	}
 	
-	// Change sprites 
-	if(speed_h != 0){
-		sprite_index = spr_player_run;
-		
-		// Change front side
-		image_xscale = sign(speed_h);
+	if(_attack){
+		sprite_index = spr_player_attack;
 	} else {
-		sprite_index = spr_player_idle;
+		// Change sprites 
+		if(speed_h != 0){
+			sprite_index = spr_player_run;
+		
+			// Change front side
+			image_xscale = sign(speed_h);
+		} else {
+			sprite_index = spr_player_idle;
+		}
 	}
+	
 } else {
 	// Gravity
 	speed_v += gravity_game;
@@ -35,7 +41,7 @@ if(_floor){
 		sprite_index = spr_player_jump;
 	} else {
 		sprite_index = spr_player_fall;
-		var _enemie = instance_place(x, y + 1, obj_enemie);
+		var _enemie = instance_place(x, y + 5, obj_enemie);
 		
 		if(_enemie){
 			is_damage = false;
@@ -59,13 +65,27 @@ if(is_damage) {
 
 if(timer_damage > 0){
 	timer_damage--;
+} else {
+	is_damage = false;
 }
+
+if(timer_invencible > 0){
+	timer_invencible--;
+	image_alpha = 0.5;
+} else {
+	image_alpha = 1;
+}
+
 
 var _enemie_hit = instance_place(x, y, obj_enemie);
 
-if(_enemie_hit){
-	timer_damage = time_hit;
+if(_enemie_hit && timer_invencible <= 0){
+	
+	
 	if(!_enemie_hit.is_dead && !_enemie_hit.is_damage){
 		is_damage = true;
+		timer_damage = time_hit;
+		timer_invencible = time_without_damage;
 	}
 }
+
