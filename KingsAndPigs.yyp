@@ -39,6 +39,7 @@
   },
   "name":"KingsAndPigs",
   "resources":[
+    {"id":{"name":"obj_bomb","path":"objects/obj_bomb/obj_bomb.yy",},},
     {"id":{"name":"obj_enemie_pig","path":"objects/obj_enemie_pig/obj_enemie_pig.yy",},},
     {"id":{"name":"obj_enemie","path":"objects/obj_enemie/obj_enemie.yy",},},
     {"id":{"name":"obj_entity","path":"objects/obj_entity/obj_entity.yy",},},
