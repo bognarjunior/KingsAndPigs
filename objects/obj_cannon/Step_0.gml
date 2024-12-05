@@ -11,6 +11,7 @@ switch(state) {
 		
 		if(image_index >= image_number -1){
 			state = "await";
+			var _cannon_ball = instance_create_layer(x -20,y,layer, obj_cannon_ball);
 		}
 		
 	break;

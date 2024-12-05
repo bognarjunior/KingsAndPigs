@@ -1,20 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_enemie",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_cannon_ball",
+  "eventList":[],
   "managed":true,
-  "name":"obj_enemie",
+  "name":"obj_cannon_ball",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemie",
-    "path":"folders/Objetos/Enemie.yy",
+    "name":"Weapons",
+    "path":"folders/Objetos/Weapons.yy",
   },
-  "parentObjectId":{
-    "name":"obj_entity",
-    "path":"objects/obj_entity/obj_entity.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_cannon_ball",
+    "path":"sprites/spr_cannon_ball/spr_cannon_ball.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

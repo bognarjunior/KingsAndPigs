@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
   "%Name":"spr_cannon",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":17,
   "bbox_left":0,
-  "bbox_right":23,
+  "bbox_right":2,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -26,7 +26,7 @@
   "origin":7,
   "parent":{
     "name":"Cannon",
-    "path":"folders/Sprites/Enemies/Weapons/Cannon.yy",
+    "path":"folders/Sprites/Weapons/Cannon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

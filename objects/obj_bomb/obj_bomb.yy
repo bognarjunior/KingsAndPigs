@@ -9,8 +9,8 @@
   "name":"obj_bomb",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Weapons",
+    "path":"folders/Objetos/Weapons.yy",
   },
   "parentObjectId":{
     "name":"obj_entity",

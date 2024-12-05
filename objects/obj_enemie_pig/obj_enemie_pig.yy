@@ -10,8 +10,8 @@
   "name":"obj_enemie_pig",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Enemie",
+    "path":"folders/Objetos/Enemie.yy",
   },
   "parentObjectId":{
     "name":"obj_enemie",

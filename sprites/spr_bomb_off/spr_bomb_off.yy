@@ -26,7 +26,7 @@
   "origin":7,
   "parent":{
     "name":"Bomb",
-    "path":"folders/Sprites/Enemies/Weapons/Bomb.yy",
+    "path":"folders/Sprites/Weapons/Bomb.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
