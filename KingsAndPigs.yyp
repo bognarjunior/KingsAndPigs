@@ -43,6 +43,7 @@
   "name":"KingsAndPigs",
   "resources":[
     {"id":{"name":"obj_bomb","path":"objects/obj_bomb/obj_bomb.yy",},},
+    {"id":{"name":"obj_cannon","path":"objects/obj_cannon/obj_cannon.yy",},},
     {"id":{"name":"obj_enemie_pig","path":"objects/obj_enemie_pig/obj_enemie_pig.yy",},},
     {"id":{"name":"obj_enemie","path":"objects/obj_enemie/obj_enemie.yy",},},
     {"id":{"name":"obj_entity","path":"objects/obj_entity/obj_entity.yy",},},
@@ -59,6 +60,7 @@
     {"id":{"name":"spr_enemie_pig_dead","path":"sprites/spr_enemie_pig_dead/spr_enemie_pig_dead.yy",},},
     {"id":{"name":"spr_enemie_pig_hit","path":"sprites/spr_enemie_pig_hit/spr_enemie_pig_hit.yy",},},
     {"id":{"name":"spr_enemie_pig_idle","path":"sprites/spr_enemie_pig_idle/spr_enemie_pig_idle.yy",},},
+    {"id":{"name":"spr_enemie_pig_light_cannon","path":"sprites/spr_enemie_pig_light_cannon/spr_enemie_pig_light_cannon.yy",},},
     {"id":{"name":"spr_enemie_pig_match","path":"sprites/spr_enemie_pig_match/spr_enemie_pig_match.yy",},},
     {"id":{"name":"spr_enemie_pig_run","path":"sprites/spr_enemie_pig_run/spr_enemie_pig_run.yy",},},
     {"id":{"name":"spr_enemie_pig_with_match","path":"sprites/spr_enemie_pig_with_match/spr_enemie_pig_with_match.yy",},},
