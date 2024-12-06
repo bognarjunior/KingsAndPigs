@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_cannon_ball",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_cannon_ball",
   "overriddenProperties":[],
@@ -9,7 +11,10 @@
     "name":"Weapons",
     "path":"folders/Objetos/Weapons.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_entity",
+    "path":"objects/obj_entity/obj_entity.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

@@ -9,9 +9,15 @@ switch(state) {
 	case "on":
 		change_sprite(spr_cannon_shoot);
 		
+		if(image_index >= 1 && !is_cannon_ball){
+			var _cannon_ball = instance_create_layer(x -10 ,y -5,layer, obj_cannon_ball);
+			_cannon_ball.speed_h = -4;
+			is_cannon_ball = true;
+		}
+		
+		
 		if(image_index >= image_number -1){
 			state = "await";
-			var _cannon_ball = instance_create_layer(x -20,y,layer, obj_cannon_ball);
 		}
 		
 	break;
