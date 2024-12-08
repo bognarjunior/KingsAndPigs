@@ -11,8 +11,8 @@ switch(state) {
 		change_sprite(spr_cannon_shoot);
 		
 		if(image_index >= 1 && !is_cannon_ball){
-			var _cannon_ball = instance_create_layer(x + (10 * image_xscale),y -5,layer, obj_cannon_ball);
-			_cannon_ball.speed_h = 4 * image_xscale;
+			var _cannon_ball = instance_create_layer(x + (10 * image_xscale ),y -5,layer, obj_cannon_ball);
+			_cannon_ball.speed_h = (4 + random_range(-1, 6)) * image_xscale;
 			_cannon_ball.speed_v = -1
 			is_cannon_ball = true;
 		}
