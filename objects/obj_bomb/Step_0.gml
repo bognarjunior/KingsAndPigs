@@ -37,6 +37,16 @@ switch(_stage) {
 				timer_invencible = time_without_damage;
 			}
 		}
+		
+		var _bomb = instance_place(x, y, obj_bomb);
+			
+		if(_bomb){
+			if(_bomb._stage == "off"){
+				_bomb.timer_boom = game_get_speed(gamespeed_fps);
+				_bomb._stage = "on";
+			}
+		}
+		
     break;
 
     default:
