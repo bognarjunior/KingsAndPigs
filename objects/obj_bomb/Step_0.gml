@@ -3,6 +3,14 @@
 
 speed_v += gravity_game;
 
+if(place_meeting(x , y + 1, obj_floor)) {
+	if(speed_h != 0){
+		speed_h *= 0.9;
+	}
+} else {
+	speed_h *= 0.99;
+}
+
 switch(_stage) {
 	case "off":
 		sprite_index = spr_bomb_off;

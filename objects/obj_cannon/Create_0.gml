@@ -8,7 +8,7 @@ timer_shot_cannon = time_shot;
 
 change_sprite = function(_sprite) {
 	if(sprite_index != _sprite){
-			sprite_index = _sprite;	
-			image_index = 0;
-		}
+		sprite_index = _sprite;	
+		image_index = 0;
+	}
 }

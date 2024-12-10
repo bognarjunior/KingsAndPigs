@@ -23,9 +23,16 @@ switch(state){
 		var _bomb = instance_place(x, y, obj_bomb);
 		var _cannon = instance_place(x, y, obj_cannon);
 	
-		if(_bomb){
-			if(_bomb._stage == "off"){
-				state = "lighting";
+		if(_bomb && _floor){
+			if(!is_picking_bomb){
+				if(_bomb._stage == "off"){
+					state = "lighting";
+				}
+			} else {
+				instance_destroy(_bomb);
+				var _new_pig = instance_create_layer(x, y, layer, obj_enemie_pig_bomb);
+				_new_pig.state = "pick";
+				instance_destroy();
 			}
 		}
 	
@@ -97,15 +104,17 @@ switch(state){
 	
 		if(image_index >= image_number -1) {
 		
-			var _bomb = instance_place(x, y, obj_bomb);
-			var _cannon = instance_place(x, y, obj_cannon);
+			var _bomb_ = instance_place(x, y, obj_bomb);
+			var _cannon_ = instance_place(x, y, obj_cannon);
 		
-			if(_bomb){
-				_bomb._stage = "on"
+			if(_bomb_){
+				_bomb_._stage = "on"
+				
+				is_picking_bomb = choose(true, false);
 			}
 			
-			if(_cannon){
-				_cannon.state = "on"
+			if(_cannon_){
+				_cannon_.state = "on"
 			}
 		
 			state = "normal"; 

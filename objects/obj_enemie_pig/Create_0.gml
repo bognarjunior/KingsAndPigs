@@ -7,6 +7,7 @@ event_inherited();
 state = "normal";
 is_walking = choose(true, false);
 speed_enemie = choose(1, -1);
+is_picking_bomb = "true"; 
 
 if(is_walking){
 	speed_h = choose(speed_enemie, -speed_enemie);
