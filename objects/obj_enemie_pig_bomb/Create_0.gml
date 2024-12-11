@@ -4,7 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-state = "idle"; // idle, run, pick, throw
+state = "idle"; // idle, run, pick, throw, hit
 time_state = game_get_speed(gamespeed_fps) * 5;
 timer_change_state = time_state;
 

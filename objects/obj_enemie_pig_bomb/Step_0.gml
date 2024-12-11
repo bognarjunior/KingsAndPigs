@@ -22,12 +22,18 @@
 	 break;
 	 case "run":
 		change_sprite(spr_enemie_pig_bomb_run);
-		if(speed_h !=0){
-			image_xscale = sign(speed_h);
-		}
 		timer_change_state--;
 		
 		see_player();
+		
+		if(speed_h !=0){
+			image_xscale = sign(speed_h);
+		}
+		
+		if(place_meeting(x + speed_h, y, obj_floor)){
+			speed_h *= -1;
+		}
+		
 		
 		if(timer_change_state <= 0){
 			state = "idle";
@@ -57,6 +63,16 @@
 			instance_destroy();
 		}
 	 break;
+	 
+	 case "hit":
+		change_sprite(spr_enemie_pig_hit);
+		speed_h = 0; 
+		if(is_damage && !is_dead){
+			sprite_index = spr_enemie_pig_hit;
+			speed_h = 0;
+		}
+	 break;
+	 
 	 default:
 	 break;
  }
