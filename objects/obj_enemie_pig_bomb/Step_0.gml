@@ -65,14 +65,29 @@
 	 break;
 	 
 	 case "hit":
-		change_sprite(spr_enemie_pig_hit);
-		speed_h = 0; 
-		if(is_damage && !is_dead){
-			sprite_index = spr_enemie_pig_hit;
-			speed_h = 0;
+		sprite_index = spr_enemie_pig_hit;
+		speed_h = 0;
+		
+		if(image_index >= image_number -1){
+			state = "dead"; 
+		}
+		
+	 break;
+	 
+	 case "dead":
+		sprite_index = spr_enemie_pig_dead ;
+		if(image_index >= image_number -1){
+			instance_destroy(); 
 		}
 	 break;
 	 
 	 default:
 	 break;
  }
+ 
+ if(is_damage && !is_dead){
+	sprite_index = spr_enemie_pig_hit;
+	state = "dead";
+	is_dead = true;
+	speed_h = 0;
+}
