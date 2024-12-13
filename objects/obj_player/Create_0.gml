@@ -15,7 +15,7 @@ timer_damage = 0;
 time_without_damage = game_get_speed(gamespeed_fps) * 3;
 timer_invencible = 0;
 
-state = "normal"; //
+state = "out"; // mormal, in, out, attack
 
 inputs = {
 	left : ord("A"),
@@ -44,7 +44,7 @@ on_normal_state = function(){
 		}
 	
 		if(_attack){
-			sprite_index = spr_player_attack;
+			state = "attack";
 		} else {
 			// Change sprites 
 			if(speed_h != 0){
