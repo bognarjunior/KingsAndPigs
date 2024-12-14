@@ -59,8 +59,11 @@
     {"id":{"name":"obj_entity","path":"objects/obj_entity/obj_entity.yy",},},
     {"id":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
+    {"id":{"name":"Level2","path":"rooms/Level2/Level2.yy",},},
     {"id":{"name":"main","path":"scripts/main/main.yy",},},
+    {"id":{"name":"seq_transition_in_Events3","path":"scripts/seq_transition_in_Events3/seq_transition_in_Events3.yy",},},
+    {"id":{"name":"seq_transition_out_Events2","path":"scripts/seq_transition_out_Events2/seq_transition_out_Events2.yy",},},
     {"id":{"name":"seq_transition_in","path":"sequences/seq_transition_in/seq_transition_in.yy",},},
     {"id":{"name":"seq_transition_out","path":"sequences/seq_transition_out/seq_transition_out.yy",},},
     {"id":{"name":"spr_bomb_boom","path":"sprites/spr_bomb_boom/spr_bomb_boom.yy",},},
@@ -100,7 +103,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
+    {"roomId":{"name":"Level2","path":"rooms/Level2/Level2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

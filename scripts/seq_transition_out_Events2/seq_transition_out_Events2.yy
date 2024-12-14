@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"seq_transition_out_Events2",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"seq_transition_out_Events2",
+  "parent":{
+    "name":"KingsAndPigs",
+    "path":"KingsAndPigs.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
