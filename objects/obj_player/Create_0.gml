@@ -16,6 +16,10 @@ time_without_damage = game_get_speed(gamespeed_fps) * 3;
 timer_invencible = 0;
 
 state = "out"; // mormal, in, out, attack
+sprite_index = spr_player_door_out;
+image_speed = 0;
+
+layer_sequence_create("Transition", x, y, seq_transition_out);
 
 inputs = {
 	left : ord("A"),
@@ -33,6 +37,8 @@ on_normal_state = function(){
 	_jump = keyboard_check_pressed(inputs.jump);
 	_attack = keyboard_check_pressed(inputs.space);
 
+	image_speed = 1;
+	
 	// Player Movement
 	if(timer_damage <= 0){
 		speed_h = (_right - _left) * speed_moviment;

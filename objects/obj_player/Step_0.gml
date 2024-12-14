@@ -3,6 +3,11 @@
 
 // Create controllers 
 var _img_speed  = sprite_get_speed(sprite_index) / game_get_speed(gamespeed_fps);
+
+if(global.is_transition){
+	exit;
+}
+
 switch(state){
 	case "normal":
 		on_normal_state();

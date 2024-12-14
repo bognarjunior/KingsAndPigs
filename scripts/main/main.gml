@@ -4,6 +4,8 @@ function main(){
 
 }
 
+global.is_transition = true;
+
 randomize();
 
 function change_sprite(_sprite) {
