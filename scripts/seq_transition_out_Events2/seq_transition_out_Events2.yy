@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"seq_transition_out_Events2",
   "parent":{
-    "name":"KingsAndPigs",
-    "path":"KingsAndPigs.yyp",
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

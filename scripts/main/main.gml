@@ -5,6 +5,10 @@ function main(){
 }
 
 global.is_transition = true;
+global.max_life_player = 3;
+global.life_player = global.max_life_player;
+
+instance_create_depth(0,0,0,obj_controller);
 
 randomize();
 
