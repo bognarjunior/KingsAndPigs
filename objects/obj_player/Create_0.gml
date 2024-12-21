@@ -90,10 +90,17 @@ on_normal_state = function(){
 	}
 
 	if(is_damage) {
-		sprite_index = spr_player_hit
+		sprite_index = spr_player_hit;
+		speed_h = 0;
 		if(is_lose_life){
 			global.life_player--;
-			is_lose_life = false;
+			
+			if(global.life_player <=0 ){
+				state = "dead";
+				speed_h = 0;
+			} else {
+				is_lose_life = false;
+			}
 		}
 	}
 
@@ -101,7 +108,7 @@ on_normal_state = function(){
 		timer_damage--;
 	} else {
 		is_damage = false;
-		
+		is_lose_life = true;
 	}
 
 	if(timer_invencible > 0){
@@ -115,8 +122,7 @@ on_normal_state = function(){
 	var _enemie_hit = instance_place(x, y, obj_enemie);
 
 	if(_enemie_hit && timer_invencible <= 0){
-		is_lose_life = true;
-	
+		
 		if(!_enemie_hit.is_dead && !_enemie_hit.is_damage){
 			is_damage = true;
 			timer_damage = time_hit;
