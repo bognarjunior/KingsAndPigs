@@ -35,9 +35,9 @@
     {"$GMFolder":"","%Name":"Pig_with_bomb","folderPath":"folders/Sprites/Enemies/Pig_with_bomb.yy","name":"Pig_with_bomb","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Pig_with_match","folderPath":"folders/Sprites/Enemies/Pig_with_match.yy","name":"Pig_with_match","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Pig","folderPath":"folders/Sprites/Enemies/Pig.yy","name":"Pig","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Utils","folderPath":"folders/Sprites/Utils.yy","name":"Utils","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Level","folderPath":"folders/Sprites/Level.yy","name":"Level","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Sprites/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Utils","folderPath":"folders/Sprites/Utils.yy","name":"Utils","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Weapons","folderPath":"folders/Sprites/Weapons.yy","name":"Weapons","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Bomb","folderPath":"folders/Sprites/Weapons/Bomb.yy","name":"Bomb","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Cannon","folderPath":"folders/Sprites/Weapons/Cannon.yy","name":"Cannon","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -46,7 +46,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.11.0.179",
   },
   "name":"KingsAndPigs",
   "resources":[
@@ -94,6 +94,7 @@
     {"id":{"name":"spr_heart","path":"sprites/spr_heart/spr_heart.yy",},},
     {"id":{"name":"spr_level","path":"sprites/spr_level/spr_level.yy",},},
     {"id":{"name":"spr_player_attack","path":"sprites/spr_player_attack/spr_player_attack.yy",},},
+    {"id":{"name":"spr_player_dead","path":"sprites/spr_player_dead/spr_player_dead.yy",},},
     {"id":{"name":"spr_player_door_in","path":"sprites/spr_player_door_in/spr_player_door_in.yy",},},
     {"id":{"name":"spr_player_door_out","path":"sprites/spr_player_door_out/spr_player_door_out.yy",},},
     {"id":{"name":"spr_player_fall","path":"sprites/spr_player_fall/spr_player_fall.yy",},},

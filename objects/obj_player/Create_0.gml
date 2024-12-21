@@ -8,6 +8,7 @@ gravity_game = 0.3;
 jump_player = 8;
 
 is_damage = false;
+is_lose_life = true;
 
 time_hit = game_get_speed(gamespeed_fps) * 1;
 timer_damage = 0;
@@ -90,12 +91,17 @@ on_normal_state = function(){
 
 	if(is_damage) {
 		sprite_index = spr_player_hit
+		if(is_lose_life){
+			global.life_player--;
+			is_lose_life = false;
+		}
 	}
 
 	if(timer_damage > 0){
 		timer_damage--;
 	} else {
 		is_damage = false;
+		
 	}
 
 	if(timer_invencible > 0){
@@ -109,7 +115,7 @@ on_normal_state = function(){
 	var _enemie_hit = instance_place(x, y, obj_enemie);
 
 	if(_enemie_hit && timer_invencible <= 0){
-	
+		is_lose_life = true;
 	
 		if(!_enemie_hit.is_dead && !_enemie_hit.is_damage){
 			is_damage = true;

@@ -2,6 +2,12 @@
 // You can write your code in this editor
 draw_text(20,20,global.life_player);
 
-draw_heart(20, 40);
-draw_heart(45, 40);
-draw_heart(70, 40);
+var _x = 20;
+var _y = 60;
+var _marg = 30;
+
+// Repeat for draw heart
+repeat(global.life_player){
+	draw_heart(_x, _y);
+	_x += _marg;
+}
